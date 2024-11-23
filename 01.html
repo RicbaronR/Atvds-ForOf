@@ -6,11 +6,26 @@
     //Faça um programa que identifique os números pares e apresente-os ao fim do programa, ordenados de forma crescente.
 
     //ENTRADA
+    let listaDeNumeros = [1, 4, 6, 8, 898, 7, 43, 2980, 3500, 10];
 
     
     //PROCESSAMENTO
+    let pares = [];
+    let impares = [];
+    for(let item of listaDeNumeros){
+        if(item%2 === 0){
+        pares.push(item);
+    } else{
+        impares.push(item);
+    }
+    }
+    
+    let crescenteImpares = impares.reverse().reverse()
+    let crescentePares = pares.sort()
 
+    let juntas = crescenteImpares.concat(crescentePares);
 
     //SAÍDA
+    document.write(juntas.join(", "))
 
 </script>
