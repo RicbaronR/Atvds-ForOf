@@ -10,16 +10,16 @@
     let listaDeNumeros = [1, 2.5, -3, 4, 8.9, 4.789, -25.6, 42];
 
     //PROCESSAMENTO
-    let listaInteirosPositivos = [];
+    let listaInteirosPosi = [];
     for(let numeros of listaDeNumeros){
         if(numeros%1 === 0 && numeros>=0){
-            listaInteirosPositivos.push(numeros);
+            listaInteirosPosi.push(numeros);
         } else{
             //is.Integer -> é outra opção para achar se é inteiro
     }
 }
 
     //SAÍDA
-    document.write(`Lista de números INTEIROS e POSITIVOS: ${listaInteirosPositivos.join(", ")}.<br>
-    Quantidade de números localizados: ${listaInteirosPositivos.length}.`);
+    document.write(`Lista de números INTEIROS e POSITIVOS: ${listaInteirosPosi.join(", ")}.<br>
+    Quantidade de números localizados: ${listaInteirosPosi.length}.`);
 </script>
