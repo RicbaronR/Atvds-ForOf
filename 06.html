@@ -3,22 +3,23 @@
     //PROBLEMA
     //Considere a lista de nomes abaixo:
     // let listaDeNomes = ["João Pedro", "Gabriel José", "Ulisses Joao", "Pedro Henrique", "João da Silva", "João Henrique", "Alisson João"];
-    //Identifique todos os nomes que contém "João" em qualquer parte do nome e separe-os em uma lista. Apresente a lista ao final do programa. Considere que poderão haver "Joãos" sem ~ (til).
+    //Identifique todos os nomes que contém "João" em qualquer parte do nome e separe-os em uma lista. Apresente a lista ao final do programa. 
+    //Considere que poderão haver "Joãos" sem ~ (til).
 
     //ENTRADA
     let listaDeNomes = ["João Pedro", "Gabriel José", "Ulisses Joao", "Pedro Henrique", "João da Silva", "João Henrique", "Alisson João"];
 
     //PROCESSAMENTO
-    let joaos = [];
-    for(let Joao of listaDeNomes){
-        if(Joao === listaDeNomes.search("João")){
-            Joaos.push(Joao);
+    let nomeJoao = [];
+    for(let nome of listaDeNomes){
+        if(nome.search("João")>= 0 || nome.search("Joao") >= 0){
+            nomeJoao.push(nome);
         } else{
 
         }
     }
     
     //SAÍDA
-    document.write(`Nomes que contém João em sua extensão: ${Joaos.join(", ")}.`)
+    document.write(`Nomes que contém João: ${nomeJoao.join(", ")}.`)
 
 </script>
